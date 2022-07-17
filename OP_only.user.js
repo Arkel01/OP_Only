@@ -7,7 +7,7 @@
 // @version      1.1.1
 // @license      MIT
 // @downloadURL  https://github.com/Arkel01/OP_Only/raw/main/OP_only.user.js
-// @updateURL    https://github.com/Arkel01/OP_Only/raw/main/OP_Only.user.js
+// @updateURL    https://github.com/Arkel01/OP_Only/raw/main/OP_only.user.js
 // @match        https://www.jeuxvideo.com/forums/42-*
 // ==/UserScript==
 
