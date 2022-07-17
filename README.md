@@ -11,6 +11,8 @@ Le script peut présenter des faiblesses en temps d'exécution si la bande passa
 et / ou si le topic analysé contient beaucoup de pages.
 
 # Installation
-Ce script s'installe avec Tampermonkey, une extension pour navigateur facilement trouvable permettant d'injecter du code javascript. 
-Une fois l'extension installée, le script s'installe via le lien https://github.com/Arkel01/OP_Only/raw/main/OP_only.user.js .
-Les nouvelles mises à jour sont automatiquement proposées aux utilisateurs.
+Ce script s'installe avec Tampermonkey, une extension pour navigateur facilement trouvable permettant d'injecter du code javascript. Les nouvelles mises à jour sont automatiquement proposées aux utilisateurs. <br />
+Une fois l'extension installée, le script s'installe via le lien : 
+<br /> <p align="center">
+  https://github.com/Arkel01/OP_Only/raw/main/OP_only.user.js
+</p>
