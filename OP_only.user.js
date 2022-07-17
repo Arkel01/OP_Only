@@ -4,9 +4,9 @@
 // @author       Arkel01
 // @description  Affiche tous les messages de l'auteur d'un topic jeuxvideo.com. Github : https://github.com/Arkel01/OP_Only
 // @icon         http://image.noelshack.com/fichiers/2022/25/3/1655854502-op-only-logo.png
-// @version      1.1.0
+// @version      1.1.1
 // @license      MIT
-// @downloadURL  https://github.com/Arkel01/OP_Only/raw/main/OP_Only.user.js
+// @downloadURL  https://github.com/Arkel01/OP_Only/raw/main/OP_only.user.js
 // @updateURL    https://github.com/Arkel01/OP_Only/raw/main/OP_Only.user.js
 // @match        https://www.jeuxvideo.com/forums/42-*
 // ==/UserScript==
@@ -43,17 +43,17 @@ async function main() { // Fonction exécutée en appuyant sur le bouton
 
     return new Promise(async resolve => {
 
+        // Extraction du nombre de pages
         let page_bloc = document.getElementsByClassName('bloc-liste-num-page')[0];
         let n_pages;
         (page_bloc.lastChild.textContent == '»') ? n_pages = page_bloc.lastChild.previousSibling.textContent : n_pages = page_bloc.lastChild.textContent; // Quand il y a beaucoup de pages, le nombre de pages est dans l'avant dernier élément, pas le dernier
-
 
         // Suppression des numéros de pages, qui pourraient laisser penser que le script affiche les résultats sur plusieurs pages
         document.getElementsByClassName('bloc-liste-num-page')[0].remove();
         document.getElementsByClassName('bloc-liste-num-page')[0].remove();
 
         // Suppression des tous les messages de la page
-        let messages_main_page = document.getElementsByClassName('bloc-message-forum mx-2 mx-lg-0 '); // Array de tous les blocs de messages de la page initiale
+        let messages_main_page = document.getElementsByClassName('conteneur-messages-pagi')[0].getElementsByClassName('bloc-message-forum mx-2 mx-lg-0 '); // Array de tous les blocs de messages de la page initiale
         let messages_main_page_length = messages_main_page.length;
         for (let element = 0; element < messages_main_page_length - 1; element++) messages_main_page[0].remove();
 
