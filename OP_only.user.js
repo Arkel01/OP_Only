@@ -4,7 +4,7 @@
 // @author       Arkel01
 // @description  Affiche tous les messages de l'auteur d'un topic jeuxvideo.com. Github : https://github.com/Arkel01/OP_Only
 // @icon         http://image.noelshack.com/fichiers/2022/25/3/1655854502-op-only-logo.png
-// @version      1.1.1
+// @version      1.1.2
 // @license      MIT
 // @downloadURL  https://github.com/Arkel01/OP_Only/raw/main/OP_only.user.js
 // @updateURL    https://github.com/Arkel01/OP_Only/raw/main/OP_only.user.js
@@ -55,7 +55,7 @@ async function main() { // Fonction exécutée en appuyant sur le bouton
         // Suppression des tous les messages de la page
         let messages_main_page = document.getElementsByClassName('conteneur-messages-pagi')[0].getElementsByClassName('bloc-message-forum mx-2 mx-lg-0 '); // Array de tous les blocs de messages de la page initiale
         let messages_main_page_length = messages_main_page.length;
-        for (let element = 0; element < messages_main_page_length - 1; element++) messages_main_page[0].remove();
+        for (let element = 0; element < messages_main_page_length; element++) messages_main_page[0].remove();
 
         // Message en haut du topic indiquant la progression du script
         let progress = document.createElement('div');
